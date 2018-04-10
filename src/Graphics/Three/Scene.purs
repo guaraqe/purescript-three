@@ -13,3 +13,5 @@ create = ffi [""] "new THREE.Scene()"
 addObject :: forall a. (Object3D a) => Scene -> a -> ThreeEff Unit
 addObject = fpi ["scene", "a", ""] "scene.add(a)"
 
+removeObject :: forall a. (Object3D a) => Scene -> a -> ThreeEff Unit
+removeObject = fpi ["scene", "a", ""] "scene.remove(a)"
