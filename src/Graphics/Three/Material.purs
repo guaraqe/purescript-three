@@ -46,3 +46,5 @@ getName = ffi ["material", ""] "material.name"
 getOpacity :: forall a. (Material a) => a -> ThreeEff Number
 getOpacity = ffi ["material", ""] "material.opacity"
 
+setValues :: forall a opt. Material a => a -> {|opt} -> ThreeEff Unit
+setValues = fpi ["material","obj",""] "material.setValues(obj);"
