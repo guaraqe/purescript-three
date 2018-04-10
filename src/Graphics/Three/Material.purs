@@ -2,7 +2,7 @@ module Graphics.Three.Material where
 
 import Prelude (Unit)
 import Graphics.Three.Types (ThreeEff)
-import Graphics.Three.Util (ffi)
+import Graphics.Three.Util (ffi, fpi)
 
 foreign import data MeshBasic   :: Type
 foreign import data LineBasic   :: Type
